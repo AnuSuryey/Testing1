@@ -1,0 +1,16 @@
+Business Users ( Admin, Production and General) are available for the BPA application 
+Admin/Production users will login to BPA (Book Print Archive) Application and creates Title Record with ISBN 
+The ISBN will be fetched from Coltrane database and given from dev team to testing team along with the release notes. 
+The newly created Title Record will have the basic metadata information like Author name, Publisher Name, Copyright Year etc
+The newly created WIP (Work in Progress) Title Records have a default basic structure
+Admin/Production user creates Contact and Company information (Vendor details)
+Admin/Production user creates Content Request and Send to Vendor1
+Vendor1 send the Content through ftp servers say Server1 and Server2
+Server1 for Auto Ingestion and Server2 for Manual Ingestion
+In Server1, the Content will be automatically injected to BPA through BPA-Request id
+Manual Ingestion is processed by selecting the Content through Add Incoming Publication button in UI
+Auto Validation and Quality Control (Manual Check) is performed
+The Title Record is Archived and removed from WIP list
+The Archived Title Record is available for Search by Admin/Production/General users
+The Content is then exported from BPA through Cart
+The Content which is in Wiley-ml3g format is ready for Printing and Publishing
